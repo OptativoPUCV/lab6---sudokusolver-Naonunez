@@ -83,7 +83,7 @@ int is_valid(Node* n){
   //Submatrices
   for(int i=0; i<3; i++){
     int arreglo[10] = {0};
-    for (j=0; j<9 ; j++){
+    for (j=0; j<3 ; j++){
       int h=3*(i/3) + (j/3);
       int k=3*(i%3) + (j%3);
 
@@ -108,13 +108,13 @@ List* get_adj_nodes(Node* n){
   int fila, columna;
 
   for(fila=0; fila<9;fila++){
-    int num=1;
+    int num = 1;
     
     for(columna=0; columna<9; columna++){
       if(n->sudo[fila][columna] == 0){
         
         for(num = 1;num < 10; num++){
-          n->sudo[fila][columna]=num;
+          n->sudo[fila][columna] = num;
           
           if(is_valid(n)){
             Node * Adyacente = copy(n);
