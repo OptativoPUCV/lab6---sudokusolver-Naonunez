@@ -134,3 +134,21 @@ sudoku.c:119:20: error: ‘j’ undeclared (first use in this function)
 cc1: all warnings being treated as errors
 Compilation failed
 02bc6f3
+Thu 05 Oct 2023 01:49:29 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:69:7: error: ‘casillaC’ undeclared (first use in this function)
+   69 |       casillaC=n->sudo[j][i];
+      |       ^~~~~~~~
+sudoku.c:69:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:67:9: error: variable ‘arreglo’ set but not used [-Werror=unused-but-set-variable]
+   67 |     int arreglo[10] = {0};
+      |         ^~~~~~~
+sudoku.c:84:10: error: ‘j’ undeclared (first use in this function)
+   84 |     for (j=0; j<9 ; j++){
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+ce31e7e
