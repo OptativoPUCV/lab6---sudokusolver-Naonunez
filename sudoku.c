@@ -44,6 +44,23 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
+  for(int i=0; i<9; i++){
+    int arreglo[10] = {0};
+    
+    for(int j=0; j<9 ; j++){
+      int casilla = n->sudo[i][j];
+      
+      if (casilla != 0){
+        if(arreglo[casilla] == 0){
+          arreglo[casilla]=1;
+          
+        }
+        else{
+          return 0;
+        }
+      }
+    }
+  }
 
     return 1;
 }
@@ -61,9 +78,7 @@ List* get_adj_nodes(Node* n){
           n->sudo[fila][columna]=num;
           Node *Adyacente= copy(n);
           pushBack(list,Adyacente);
-          
         }
-        
       }
     }
   }
