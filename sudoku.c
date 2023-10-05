@@ -111,8 +111,9 @@ List* get_adj_nodes(Node* n){
       if(n->sudo[fila][columna] == 0){
         for(num = 1;num<10; num++){
           n->sudo[fila][columna]=num;
-          Node *Adyacente= copy(n);
-          pushBack(list,Adyacente);
+          if(is_valid(n)){
+            Node *Adyacente= copy(n);
+            pushBack(list,Adyacente);
         }
       }
     }
