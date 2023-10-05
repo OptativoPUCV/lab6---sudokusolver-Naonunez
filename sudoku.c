@@ -50,8 +50,24 @@ int is_valid(Node* n){
 
 
 List* get_adj_nodes(Node* n){
-    List* list=createList();
-    return list;
+  List* list=createList();
+  int fila, columna;
+
+  for(fila=0; fila<9;fila++){
+    num=1;
+    for(columna=0; columna<9; columna++){
+      if(n->sudo[fila][columna] == 0){
+        for(num = 1;num<10; num++){
+          n->sudo[fila][columna]=num;
+          Node *Adyacente= copy(n);
+          pushBack(list,Adyacente);
+          
+        }
+        
+      }
+    }
+  }
+  return list;
 }
 
 

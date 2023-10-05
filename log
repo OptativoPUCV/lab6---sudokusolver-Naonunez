@@ -2,3 +2,14 @@ Thu 05 Oct 2023 12:58:36 PM UTC:
  tests:  0|5
 total_score: 0/70
 cf635dc
+Thu 05 Oct 2023 01:12:44 PM UTC: 
+ sudoku.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:5: error: ‘num’ undeclared (first use in this function)
+   57 |     num=1;
+      |     ^~~
+sudoku.c:57:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ff0b4c6
