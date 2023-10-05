@@ -25,3 +25,18 @@ Thu 05 Oct 2023 01:20:40 PM UTC:
  tests:  5|3
 total_score: 35/70
 f810cf2
+Thu 05 Oct 2023 01:32:21 PM UTC: 
+ sudoku.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:69:7: error: ‘casillaC’ undeclared (first use in this function)
+   69 |       casillaC=n->sudo[j][i];
+      |       ^~~~~~~~
+sudoku.c:69:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:67:9: error: variable ‘arreglo’ set but not used [-Werror=unused-but-set-variable]
+   67 |     int arreglo[10] = {0};
+      |         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f43e5fd

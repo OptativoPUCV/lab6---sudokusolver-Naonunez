@@ -44,6 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
+  //Filas
   for(int i=0; i<9; i++){
     int arreglo[10] = {0};
     
@@ -54,6 +55,21 @@ int is_valid(Node* n){
         if(arreglo[casilla] == 0){
           arreglo[casilla]=1;
           
+        }
+        else{
+          return 0;
+        }
+      }
+    }
+  }
+  //Columnas
+  for (int i=0;i<9;i++){
+    int arreglo[10] = {0};
+    for(int j=0;j<9;j++){
+      casillaC=n->sudo[j][i];
+      if(casillaC != 0){
+        if (arreglo[casillaC] == 0){
+          arreglo[casillaC] = 1;
         }
         else{
           return 0;
