@@ -40,3 +40,21 @@ sudoku.c:67:9: error: variable ‘arreglo’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 f43e5fd
+Thu 05 Oct 2023 01:43:41 PM UTC: 
+ sudoku.c | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:69:7: error: ‘casillaC’ undeclared (first use in this function)
+   69 |       casillaC=n->sudo[j][i];
+      |       ^~~~~~~~
+sudoku.c:69:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:67:9: error: variable ‘arreglo’ set but not used [-Werror=unused-but-set-variable]
+   67 |     int arreglo[10] = {0};
+      |         ^~~~~~~
+sudoku.c:84:10: error: ‘j’ undeclared (first use in this function)
+   84 |     for (j=0; j<9 ; j++){
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+69cc7ae
