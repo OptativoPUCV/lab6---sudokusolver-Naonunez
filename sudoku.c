@@ -81,13 +81,13 @@ int is_valid(Node* n){
   }
 
   //Submatrices
-  for(int i=0; i<3; i++){
+  int i=4;
     int arreglo[10] = {0};
     for (int j=0; j<9 ; j++){
       int h=3*(i/3) + (j/3);
       int k=3*(i%3) + (j%3);
 
-      int Matriz= n->sudo[k][h];
+      int Matriz = n->sudo[k][h];
       if(Matriz != 0){
         if(arreglo[Matriz] == 0){
           arreglo[Matriz]= 1;
