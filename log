@@ -206,3 +206,32 @@ sudoku.c:86:10: error: ‘j’ undeclared (first use in this function)
 cc1: all warnings being treated as errors
 Compilation failed
 f1bac2c
+Thu 05 Oct 2023 02:27:53 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:70:7: error: ‘casillaC’ undeclared (first use in this function)
+   70 |       casillaC= n->sudo[j][i];
+      |       ^~~~~~~~
+sudoku.c:70:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:67:9: error: variable ‘arreglo’ set but not used [-Werror=unused-but-set-variable]
+   67 |     int arreglo[10] = {0};
+      |         ^~~~~~~
+test.c:245:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+  262 | }
+      | ^
+test.c:263: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:245:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  245 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:7:8: error: ‘_strdup’ defined but not used [-Werror=unused-function]
+    7 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27ce57b
