@@ -156,8 +156,9 @@ Node* DFS(Node* initial, int* cont){
     Node* nodo=top(S);
     pop(S);
 
-    *cont=*cont-1;
+    *cont= *cont-1;
     (*cont)--;
+    
     if(is_final(nodo)==1){
       return nodo;
     
@@ -171,11 +172,11 @@ Node* DFS(Node* initial, int* cont){
       push(S,aux);
       aux=next(Adyacente);
       
-      (cont*)++;
+      (*cont)++;
       *cont = *cont +1;
       
     }
-    (cont*)++;
+    (*cont)++;
     free(nodo);
   }
   if(*cont == 0) {
