@@ -162,6 +162,10 @@ Node* DFS(Node* initial, int* cont){
       return nodo;
     }
   }
+  if(*cont == 0) {
+  return NULL;
+  }
+  free(initial);
   return NULL;
 }
 

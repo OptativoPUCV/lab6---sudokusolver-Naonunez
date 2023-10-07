@@ -349,3 +349,14 @@ sudoku.c:160:5: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 67f116a
+Sat 07 Oct 2023 03:09:08 AM UTC: 
+ sudoku.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:160:5: error: value computed is not used [-Werror=unused-value]
+  160 |     *cont--;
+      |     ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6355b3e
