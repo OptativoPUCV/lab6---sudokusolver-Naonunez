@@ -374,3 +374,13 @@ sudoku.c:173:14: error: expected expression before ‘;’ token
 cc1: all warnings being treated as errors
 Compilation failed
 0571ca7
+Sat 07 Oct 2023 03:19:31 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:173:14: error: expected expression before ‘;’ token
+  173 |       cont*++;
+      |              ^
+Compilation failed
+9ccdfb8
