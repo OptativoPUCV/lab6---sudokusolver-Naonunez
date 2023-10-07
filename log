@@ -323,3 +323,18 @@ sudoku.c:161:8: error: implicit declaration of function ‘isfinal’; did you m
 cc1: all warnings being treated as errors
 Compilation failed
 c365bf7
+Sat 07 Oct 2023 01:42:23 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:160:5: error: value computed is not used [-Werror=unused-value]
+  160 |     *cont--;
+      |     ^~~~~~~
+sudoku.c:161:8: error: implicit declaration of function ‘isfinal’; did you mean ‘is_final’? [-Werror=implicit-function-declaration]
+  161 |     if(isfinal(nodo)==1){
+      |        ^~~~~~~
+      |        is_final
+cc1: all warnings being treated as errors
+Compilation failed
+1c70c2f
