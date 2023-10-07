@@ -158,7 +158,7 @@ Node* DFS(Node* initial, int* cont){
 
     *cont=*cont-1;
     *cont--;
-    if(isfinal(nodo)==1){
+    if(is_final(nodo)==1){
       return nodo;
     }
   }
