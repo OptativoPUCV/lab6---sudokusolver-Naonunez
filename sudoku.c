@@ -151,6 +151,17 @@ Node* DFS(Node* initial, int* cont){
   }
   *cont=1;
   push(S,initial);
+
+  while(S != 0){
+    Node* nodo=top(s);
+    pop(s);
+
+    *cont=*cont-1;
+    *cont--;
+    if(isfinal(nodo)==1){
+      return nodo;
+    }
+  }
   return NULL;
 }
 
