@@ -419,3 +419,21 @@ sudoku.c:174:14: error: expected expression before ‘;’ token
       |              ^
 Compilation failed
 902be97
+Sat 07 Oct 2023 03:23:04 AM UTC: 
+ sudoku.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:174:13: error: expected expression before ‘)’ token
+  174 |       (cont*)++;
+      |             ^
+sudoku.c:178:11: error: expected expression before ‘)’ token
+  178 |     (cont*)++;
+      |           ^
+sudoku.c:179:5: error: implicit declaration of function ‘ree’; did you mean ‘free’? [-Werror=implicit-function-declaration]
+  179 |     ree(nodo);
+      |     ^~~
+      |     free
+cc1: all warnings being treated as errors
+Compilation failed
+24dd5eb

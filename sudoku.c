@@ -171,10 +171,12 @@ Node* DFS(Node* initial, int* cont){
       push(S,aux);
       aux=next(Adyacente);
       
-      cont*++;
+      (cont*)++;
       *cont = *cont +1;
       
     }
+    (cont*)++;
+    ree(nodo);
   }
   if(*cont == 0) {
   return NULL;
