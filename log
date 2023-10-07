@@ -437,3 +437,16 @@ sudoku.c:179:5: error: implicit declaration of function ‘ree’; did you mean 
 cc1: all warnings being treated as errors
 Compilation failed
 24dd5eb
+Sat 07 Oct 2023 03:23:30 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:174:13: error: expected expression before ‘)’ token
+  174 |       (cont*)++;
+      |             ^
+sudoku.c:178:11: error: expected expression before ‘)’ token
+  178 |     (cont*)++;
+      |           ^
+Compilation failed
+b1c9282
