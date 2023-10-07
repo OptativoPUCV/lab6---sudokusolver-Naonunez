@@ -67,7 +67,7 @@ int is_valid(Node* n){
     int arreglo[10] = {0};
     
     for(int j=0;j<9;j++){
-      casillaC= n->sudo[j][i];
+      int casillaC= n->sudo[j][i];
       
       if(casillaC != 0){
         if (arreglo[casillaC] == 0){
