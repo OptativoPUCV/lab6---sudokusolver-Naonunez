@@ -160,6 +160,18 @@ Node* DFS(Node* initial, int* cont){
     *cont--;
     if(is_final(nodo)==1){
       return nodo;
+    
+    }
+
+    List * Adyacente = get_adj_nodes(nodo);
+
+    Node* aux =first(Adyacente);
+
+    while( aux != NULL){
+      push(S,aux);
+      aux=next(Adyacente);
+      cont*++;
+      
     }
   }
   if(*cont == 0) {
