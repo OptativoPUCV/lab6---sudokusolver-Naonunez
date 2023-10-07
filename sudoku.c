@@ -152,7 +152,7 @@ Node* DFS(Node* initial, int* cont){
   *cont=1;
   push(S,initial);
 
-  while(S != 0){
+  while(get_size(S) != 0){
     Node* nodo=top(S);
     pop(S);
 
