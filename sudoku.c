@@ -81,7 +81,7 @@ int is_valid(Node* n){
   }
 
   //Submatrices
-  int i=4;
+  for(int i=0; i<3;i++){
     int arreglo[10] = {0};
     for (int j=0; j<9 ; j++){
       int h=3*(i/3) + (j/3);
@@ -94,10 +94,11 @@ int is_valid(Node* n){
         }
         else{
           return 0;
+        
         }
       }
     }
-  
+  }
 
   return 1;
 }
