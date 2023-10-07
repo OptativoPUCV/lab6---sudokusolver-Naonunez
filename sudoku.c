@@ -150,7 +150,7 @@ Node* DFS(Node* initial, int* cont){
     return NULL;
   }
   *cont=1;
-  push(S,inicial);
+  push(S,initial);
   return NULL;
 }
 
