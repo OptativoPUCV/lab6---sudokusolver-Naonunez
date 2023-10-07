@@ -399,3 +399,13 @@ Sat 07 Oct 2023 03:20:21 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e745428
+Sat 07 Oct 2023 03:21:06 AM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:173:13: error: expected expression before ‘)’ token
+  173 |       (cont*)++;
+      |             ^
+Compilation failed
+7f9654b
